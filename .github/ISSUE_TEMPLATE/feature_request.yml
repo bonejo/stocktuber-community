@@ -1,0 +1,17 @@
+name: Feature request
+description: Suggest an improvement to StockTuber
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like StockTuber to do?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: Why would it help you?
+  - type: markdown
+    attributes:
+      value: "To suggest a creator to track, please use the Recommend a StockTuber form on https://stocktuber.com."

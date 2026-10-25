@@ -1,0 +1,23 @@
+name: Bug report
+description: Something on stocktuber.com looks broken
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: What did you see, and what did you expect instead?
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Page or URL
+      placeholder: https://stocktuber.com/stocks/NVDA
+  - type: input
+    id: env
+    attributes:
+      label: Browser and device (optional)
+  - type: markdown
+    attributes:
+      value: "Please do not include passwords, account details, or other private information."

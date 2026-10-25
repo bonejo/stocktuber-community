@@ -1,0 +1,26 @@
+name: Data looks wrong
+description: A stance, summary, number, or creator attribution seems incorrect
+title: "[Data] "
+labels: ["bug"]
+body:
+  - type: input
+    id: where
+    attributes:
+      label: Stock page or API call
+      placeholder: https://stocktuber.com/stocks/NVDA
+    validations:
+      required: true
+  - type: textarea
+    id: wrong
+    attributes:
+      label: What looks wrong?
+      description: Quote the summary or number, and say what the original video says if you checked.
+    validations:
+      required: true
+  - type: input
+    id: video
+    attributes:
+      label: Source video link (optional)
+  - type: markdown
+    attributes:
+      value: "Summaries are AI-generated and can contain mistakes. Reports like this help us fix them."
